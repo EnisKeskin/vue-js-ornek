@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import BootstrapVue from 'bootstrap-vue/dist/bootstrap-vue.esm';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-import Trial from './components/Trial.vue'
+import Dashboard from './components/Dashboard.vue'
 import Index from './components/Index.vue'
 
 Vue.use(VueRouter)
@@ -15,8 +15,8 @@ Vue.config.productionTip = false
 const router = new VueRouter({
   routes: [
     { path: '/', component: Index, },
-    { path: '/trial', component: Trial },
-    { path: '/trial/:id', component: Trial }
+    { path: '/dashboard', component: Dashboard },
+    { path: '/dashboard/:id', component: Dashboard }
   ],
   mode: 'history'
 })

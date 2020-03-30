@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background-image: url('https://www.ecronicon.com/promotions/images/abg3.jpg')">
     <b-container class="index-container">
       <b-form
         @submit="onSubmit"
