@@ -6,7 +6,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import Dashboard from './components/Dashboard.vue'
 import Index from './components/Index.vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+ 
 
+Vue.use(VueAxios, axios)
 Vue.use(VueRouter)
 Vue.use(BootstrapVue);
 
