@@ -66,8 +66,12 @@ export default {
       modal: {
         username: "Enis keskin",
         date: new Date().toDateString()
-      }
+      },
+      info: null
     };
+  },
+  created: function() {
+    this.trial();
   },
   methods: {
     onSubmit(e) {
@@ -77,8 +81,24 @@ export default {
     onClickModel(data) {
       this.modal.username = data.username;
       this.modal.date = data.date;
+    },
+    trial() {
+      var myHeaders = new Headers({
+        "Content-Type": " application/json"
+      });
+      fetch("http://localhost:8000/posts", {
+        method: "GET",
+        headers: myHeaders,
+        mode: "no-cors",
+        credentials: "include"
+      })
+        .then(data => {
+          console.log("Request succeeded with JSON response", data);
+        })
+        .catch(function(error) {
+          console.log("Request failed", error);
+        });
     }
-   
   }
 };
 </script>

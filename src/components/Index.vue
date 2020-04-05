@@ -18,8 +18,8 @@
         >
           <b-form-input
             id="input-1"
-            v-model="form.email"
-            type="email"
+            v-model="form.username"
+            type="text"
             class="col-sm-12 col-md-12 col-lg-12 col-xl-12"
             required
             placeholder="Enter email"
@@ -37,16 +37,13 @@
           <b-form-input
             type="password"
             id="input-2"
-            v-model="form.name"
+            v-model="form.password"
             required
             placeholder="Enter password "
           ></b-form-input>
         </b-form-group>
 
         <div class="login-bottom pr-3 pl-3">
-          <b-form-group id="input-group-4">
-            <b-form-checkbox v-model="form.checked" id="checkboxes-4">Remember me</b-form-checkbox>
-          </b-form-group>
           <b-form-group id="input-group-5">
             <b-button
               id="sbmt"
@@ -67,22 +64,34 @@ export default {
   data() {
     return {
       form: {
-        email: "",
-        name: "",
-        checked: false
+        username: "",
+        password: ""
       },
-      show: true
+      show: true,
+      login:false
     };
   },
   methods: {
     onSubmit(e) {
       e.preventDefault();
+      fetch("http://localhost:8000/login", {
+        method: "POST",
+         mode: "no-cors",
+        headers: {
+          "Content-type": "application/x-www-form-urlencoded;"
+        },
+        credentials: 'include',
+        body: JSON.stringify(this.form)
+      })
+        .then(res => {console.log(res.status)})
+        .catch(function(error) {
+          console.log("Request failed", error);
+        });
     },
     onReset(e) {
       e.preventDefault();
-      this.form.email = "";
-      this.form.name = "";
-      this.form.check = false;
+      this.form.username = "";
+      this.form.password = "";
       this.show = false;
       this.$nextTick(() => {
         this.show = true;
