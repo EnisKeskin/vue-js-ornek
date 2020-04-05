@@ -53,13 +53,13 @@ export default {
         {
           username: "Enis Keskin",
           message:
-            "Bilgi Teknolojileri sektöründe çalışan biri olarak Zoom’un nasıl bu kadar başarılı olabildiğini merak ediyordum. Cisco WebEx, Microsoft  Skype, Google Hangouts neden Zoom? Bugün kızımın dans dersi de Zoom’dan yapılınca biraz araştırdım:",
+            "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.",
           date: new Date().toDateString()
         },
         {
           username: "Mürvet Berber",
           message:
-            "Bilgi Teknolojileri sektöründe çalışan biri olarak Zoom’un nasıl bu kadar başarılı olabildiğini merak ediyordum. Cisco WebEx, Microsoft  Skype, Google Hangouts neden Zoom? Bugün kızımın dans dersi de Zoom’dan yapılınca biraz araştırdım:",
+            "Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.",
           date: new Date().toDateString()
         }
       ],
